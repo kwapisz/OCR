@@ -1,4 +1,4 @@
-ńńńńname: Build Windows EXE
+name: Build Windows EXE
 
 on:
   push:
@@ -26,7 +26,7 @@ jobs:
         run: pyinstaller --onefile generate_all_mets.py
 
       - name: Upload EXE as artifact
-        uses: actions/upload-artifact@v3.1.3
+        uses: actions/upload-artifact@3db6d1cfb98b926c3890387fbada4ac7e1c6f93c
         with:
           name: METS_Generator
           path: dist/generate_all_mets.exe
