@@ -26,7 +26,7 @@ jobs:
         run: pyinstaller --onefile generate_all_mets.py
 
       - name: Upload EXE as artifact
-        uses: actions/upload-artifact@v3.1.2
+        uses: actions/upload-artifact@v2
         with:
           name: METS_Generator
           path: dist/generate_all_mets.exe
